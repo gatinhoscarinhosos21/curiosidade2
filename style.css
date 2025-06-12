@@ -1,0 +1,115 @@
+ /* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Azul claro, suave para o tema de gatos */
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffcccb; /* Rosa suave */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f28d96;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #ff6347; /* Tom mais forte de laranja, para destaque */
+}
+
+/* Seções */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.curiosidade {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.curiosidade h2 {
+    font-size: 2em;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.curiosidade p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffcccb;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #f28d96;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .curiosidade {
+        padding: 15px;
+    }
+}
+
+
